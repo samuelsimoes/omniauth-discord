@@ -26,7 +26,8 @@ module OmniAuth
 
       extra do
         {
-          'raw_info' => raw_info
+          'raw_info' => raw_info,
+          'guild' => access_token.to_hash['guild']
         }
       end
 
